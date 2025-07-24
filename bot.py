@@ -9,6 +9,7 @@ if not BOT_TOKEN:
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
+bot.remove_webhook()
 # Store user emails in memory
 user_emails = {}
 
