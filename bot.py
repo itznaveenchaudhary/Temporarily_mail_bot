@@ -1,8 +1,13 @@
+import os
 import telebot
 import requests
 
-BOT_TOKEN = "TOKEN"  # ← Yahan apna token daalna
-bot = telebot.TeleBot("TOKEN")
+BOT_TOKEN = os.getenv("TOKEN")  # ← Environment variable se token le
+
+if not BOT_TOKEN:
+    raise ValueError("Token not found! Check Render environment variable.")
+
+bot = telebot.TeleBot(BOT_TOKEN)
 
 # Store user emails in memory
 user_emails = {}
