@@ -1,8 +1,8 @@
 import telebot
 import requests
 
-BOT_TOKEN = "7820566381:AAETMJs6qFVpcEu4kWDq9DkOiItaFlDqFqw"  # ← Yahan apna token daalna
-bot = telebot.TeleBot("7820566381:AAETMJs6qFVpcEu4kWDq9DkOiItaFlDqFqw")
+BOT_TOKEN = "TOKEN"  # ← Yahan apna token daalna
+bot = telebot.TeleBot("TOKEN")
 
 # Store user emails in memory
 user_emails = {}
